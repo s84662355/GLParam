@@ -33,7 +33,7 @@ class Param{
             if($dohandle)
             {
                 $handle = $value['handle'];
-                return call_user_func_array([$handle,'handle'],$_args);
+                return call_user_func_array([$handle,'handle'],[$_args]);
             }
         }
 
